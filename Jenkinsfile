@@ -4,7 +4,7 @@ pipeline {
         stage('Assign') {
             steps {
                 script {
-                    currentBuild.result = 'SUCCESS'
+                    currentBuild.result = 'ABORTED'
                 }}}
         
         stage('Next_stage_1') {
