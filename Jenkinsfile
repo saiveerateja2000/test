@@ -10,7 +10,7 @@ pipeline {
             steps {
                 script {
                     try{
-                        if( 'alpha' == 'alpha'){
+                        if( 'alpha' == 'alpha2'){
                             sh 'echo "good is working" '
                             }
                         else{
