@@ -4,6 +4,8 @@ unit_test_report:
 	pip3 install coverage; \
 	export PATH="$$PATH:/var/lib/jenkins/.local/bin"; \
 	coverage; \
+	coverage run -m pytest test_example.py; \
+	coverage report -m; \
 	pwd; \
 	exit 1;
 pyvenv:
