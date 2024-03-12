@@ -39,6 +39,7 @@ pipeline {
             steps {
                 script {
                     sh 'echo "next stage 1 is going on"'
+                    sh 'pip3 show coverage'
                 }}}
                 
         stage('Next_Stage_2') {
