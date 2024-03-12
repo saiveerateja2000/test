@@ -7,8 +7,10 @@ pipeline {
                     currentBuild.result = 'SUCCESS'
                 }}}
         stage('Loadingfile') {
-            groovyfile = load("atom.groovy")}
-        
+            steps {
+                script {
+                    groovyfile = load("atom.groovy")
+                }}}
         stage('good') {
             steps {
                 script {
