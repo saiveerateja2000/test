@@ -28,7 +28,7 @@ pipeline {
                             groovyfile.unit_testing()
                             }
                     }
-                    catch(all){
+                    catch(e){
                         sh 'echo "good is catched" '
                         currentBuild.result = 'ABORTED'
                     }}}}
