@@ -1,3 +1,3 @@
 unit_test_report:
 	echo "unit test report generated"; \
-	throw e;
+	exit 1;
