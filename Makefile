@@ -9,7 +9,9 @@ unit_test_report:
 pyvenv:
 	pwd; \
 	python3 -m venv alpha1; \
-	ls -la;\
+	ls -la; \
+	cd alpha1/bin; \
+	ls -la
 	./alpha1/bin/activate; \
 	echo "virtual env created by alpha1"; \
 	deactivate; 
