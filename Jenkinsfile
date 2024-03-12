@@ -18,8 +18,8 @@ pipeline {
                             exit 1}
                     }
                     catch(e){
-                        sh 'echo "good is catched" '}
-                    }}}
+                        sh 'echo "good is catched" '
+                    }}}}
         
         stage('Next_stage_1') {
             when {
