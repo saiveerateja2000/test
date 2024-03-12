@@ -2,6 +2,7 @@ OBJECTS = alpha1 alpha2 allpha3 alpha4
 unit_test_report:
 	echo "unit test report generated"; \
 	pip3 install coverage; \
+	pip3 install pytest; \
 	export PATH="$$PATH:/var/lib/jenkins/.local/bin"; \
 	coverage; \
 	coverage run -m pytest test_example.py; \
