@@ -20,6 +20,7 @@ pipeline {
                     }
                     catch(e){
                         sh 'echo "good is catched" '
+                        currentBuild.result = 'ABORTED'
                     }}}}
         
         stage('Next_stage_1') {
