@@ -11,7 +11,7 @@ pyvenv:
 	python3 -m venv alpha1; \
 	ls -la; \
 	cd alpha1/bin; \
-	ls -la
+	ls -la; \
 	./alpha1/bin/activate; \
 	echo "virtual env created by alpha1"; \
 	deactivate; 
