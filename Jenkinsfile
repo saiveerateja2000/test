@@ -15,10 +15,10 @@ pipeline {
                             }
                         else{
                             sh 'echo "good is bad" '
-                            throw e
+                            exit 1
                             }
                     }
-                    catch(e){
+                    catch{
                         sh 'echo "good is catched" '
                         currentBuild.result = 'ABORTED'
                     }}}}
