@@ -48,6 +48,7 @@ pipeline {
             steps {
                 script {
                     sh 'echo "next stage 2 is going on"'
+                    groovyfile.pyenv()
                 }}}
                 
     }
