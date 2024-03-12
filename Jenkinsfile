@@ -8,6 +8,7 @@ pipeline {
                 }}}
         stage('Loadingfile') {
             groovyfile = load("atom.groovy")
+        }
 
         stage('good') {
             steps {
