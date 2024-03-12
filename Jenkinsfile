@@ -15,6 +15,7 @@ pipeline {
                             }
                         else{
                             sh 'echo "good is bad" '
+                            throw e
                             }
                     }
                     catch(e){
