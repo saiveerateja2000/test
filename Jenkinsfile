@@ -6,6 +6,19 @@ pipeline {
                 script {
                     currentBuild.result = 'ABORTED'
                 }}}
+        stage('good') {
+            steps {
+                script {
+                    try{
+                        if( 'alpha' = 'alpha'){
+                            echo 'good is working '}
+                        else{
+                            echo 'good is bad'
+                            exit 1}
+                    }
+                    catch(e){
+                        echo 'good is catched'}
+                    }}}
         
         stage('Next_stage_1') {
             when {
