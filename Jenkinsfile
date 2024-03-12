@@ -10,7 +10,6 @@ pipeline {
             steps {
                 script {
                     echo "loading groovyfile"
-                    def groovyfile = load("atom.groovy")
                     echo "Groovy file loaded"
                 }}}
 
