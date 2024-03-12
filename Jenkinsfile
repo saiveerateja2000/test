@@ -9,9 +9,12 @@ pipeline {
         stage('Loadingfile') {
             steps {
                 script {
+                    echo "Loading Groovy file..."
                     groovyfile = load("atom.groovy")
-                    echo "groovy file loaded"
+                    echo "Groovy file loaded successfully"
                 }}}
+
+
         stage('good') {
             steps {
                 script {
