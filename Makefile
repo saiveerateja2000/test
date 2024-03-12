@@ -9,6 +9,7 @@ unit_test_report:
 pyvenv:
 	pwd; \
 	python3 -m venv alpha1; \
+	sh 'chmod +x alpha1/bin/activate'; \
 	ls -la; \
 	cd alpha1/bin; \
 	ls -la; \
