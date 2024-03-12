@@ -15,7 +15,7 @@ pipeline {
                             }
                         else{
                             sh 'echo "good is bad" '
-                            exit 1}
+                            }
                     }
                     catch(e){
                         sh 'echo "good is catched" '}
