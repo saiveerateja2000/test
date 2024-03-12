@@ -22,7 +22,6 @@ pipeline {
                             }
                         else{
                             sh 'echo "good is bad" '
-                            exit 1
                             }
                     }
                     catch(all){
