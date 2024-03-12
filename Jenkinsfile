@@ -27,7 +27,7 @@ pipeline {
                             sh 'echo "good is bad" '
                             }
                     }
-                    catch(all){
+                    catch(e){
                         sh 'echo "good is catched" '
                         currentBuild.result = 'ABORTED'
                     }}}}
