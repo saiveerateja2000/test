@@ -4,14 +4,15 @@ pipeline {
         stage('Assign') {
             steps {
                 script {
-                    currentBuild.result = 'ABORTED'
+                    currentBuild.result = 'SUCCESS'
                 }}}
         stage('good') {
             steps {
                 script {
                     try{
                         if( 'alpha' == 'alpha'){
-                            sh 'echo "good is working" '}
+                            sh 'echo "good is working" '
+                            }
                         else{
                             sh 'echo "good is bad" '
                             exit 1}
