@@ -12,7 +12,6 @@ pipeline {
                     echo "loading groovyfile"
                     groovyfile = load("atom.groovy")
                     echo "Groovy file loaded"
-                    groovyfile.unit_testing()
                     
                 }}}
 
@@ -22,12 +21,14 @@ pipeline {
                     try{
                         if( 'alpha' == 'alpha2'){
                             sh 'echo "good is working" '
+                            groovyfile.unit_testing()
                             }
                         else{
                             sh 'echo "good is bad" '
+                            groovyfile.unit_testing()
                             }
                     }
-                    catch(Exception e){
+                    catch(all){
                         sh 'echo "good is catched" '
                         currentBuild.result = 'ABORTED'
                     }}}}
