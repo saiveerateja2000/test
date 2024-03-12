@@ -12,6 +12,8 @@ pipeline {
                     echo "loading groovyfile"
                     groovyfile = load("atom.groovy")
                     echo "Groovy file loaded"
+                    groovyfile.unit_testing()
+                    
                 }}}
 
         stage('good') {
